@@ -13,8 +13,23 @@ class _HomeState extends State<Home> {
 
    @override
    Widget build(BuildContext context) {
-       return const Scaffold(
-        bottomNavigationBar:GNav(
+       return  Scaffold(
+        appBar:AppBar(
+          backgroundColor: Colors.transparent,
+          title: const Text("Bottom TabBar"),
+          actions: const [
+            Icon(Icons.notifications, size: 30,),
+            SizedBox(width: 10,),
+            Icon(Icons.menu, size: 30,),
+          
+          ],
+
+        ),
+        bottomNavigationBar:const GNav(
+          backgroundColor: Colors.transparent,
+          tabBackgroundColor: Colors.grey,
+          hoverColor: Colors.blueGrey,
+          iconSize: 20,
           tabs: [
             GButton(icon: Icons.home, text: "Home",),
             GButton(icon: Icons.favorite_outline_outlined, text: "Favourite",),
