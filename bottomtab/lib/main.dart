@@ -1,4 +1,5 @@
 import 'package:bottomtab/home.dart';
+import 'package:bottomtab/recents.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const Home(),
+      
     );
   }
 }
+
+
 
