@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
         elevation: 0,
         // backgroundColor: Colors.,
         title: const Text(
-          "Good afternoon",
+          "Good",
         ),
         actions: const [
           Icon(
@@ -27,19 +27,20 @@ class _HomeState extends State<Home> {
           SizedBox(
             width: 10,
           ),
-          Icon(
+         /*  Icon(
             Icons.timer_outlined,
             size: 30,
           ),
           SizedBox(
             width: 10,
-          ),
+          ), */
           Icon(
             Icons.settings,
             size: 30,
           ),
         ],
       ),
+      body: const Grids(),
       bottomNavigationBar: const GNav(
         backgroundColor: Colors.transparent,
         tabBackgroundColor: Colors.grey,
